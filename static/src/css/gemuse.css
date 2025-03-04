@@ -1,0 +1,66 @@
+
+
+#vege-div {;
+}
+.legume {
+	float: left;
+	padding: 2%;
+	overflow: hidden;
+}
+.legume label { position: absolute; margin-left: 8%; }
+
+#versand-cont {
+	width: 100%;
+}
+
+#vers {
+	marging-left: 50%;
+	font-size: 30px;
+}
+#vers .ul0 {
+	float: left;
+	margin-left: 25%;
+    border: solid .1px;
+    background-color: grey;
+    padding: 1%; padding-right: 3.89%; padding-left: 3.89%;
+}
+#vers .ul1 {
+	float: right;
+	margin-right: 25%;
+    border: solid .1px;
+    background-color: grey;
+    padding: 1%; padding-right: 3.89%; padding-left: 3.89%;
+}
+
+#vers li {
+	overflow: hidden;
+}
+#v-preis { 
+	margin-top: 7%;
+	font-size: 20px;
+}
+
+.u0 li { 
+	float: left; 
+	overflow: hidden;
+	margin-left: 23%;
+	padding: 1%; padding-right: 5%; padding-left: 5%;
+}
+.u1 li { 
+	float: right;
+	overflow: hidden;
+	margin-right: 25%;
+	padding: 1%; padding-right: 5%; padding-left: 5%;
+}
+
+#center-info {
+	margin-top: 5%;
+	width: 100%; height: 33px;
+	background-color: black;
+}
+
+.powered {
+	font-size: 22px;
+	color: white;
+}
+.powered a { color: red; }

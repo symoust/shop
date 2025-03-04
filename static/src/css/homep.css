@@ -1,0 +1,271 @@
+
+* { margin: 0px; padding: 0px; }
+
+body { margin: 0px; padding: 0px; background-color: whitesmoke; display: block; }
+
+#dv-content {
+	margin-top: 0.5%;
+	width: 100%; height: 65px; 
+	background-color: darkgoldenrod; 
+	border: solid 1px yellow; 
+	position: fixed;
+}
+.titre {
+	float: left;
+	margin-left: 1%; margin-top: -0.5%;
+	text-shadow: .8px 1.2px 2px darkred;
+	font-size: 65px;
+}
+.titre label {
+	animation  : color 10s infinite;
+}
+@keyframes color {
+	10%  { color: blue; }
+	20%  { color: red; }
+	30%  { color: yellow; }
+	40%  { color: beige; }
+	50% { color: cyan; }
+	60%  { color: cornflowerblue; }
+	70% { color: teal; }
+	80% { color: magenta; }
+	90%  { color: slategray; }
+	100% { color: firebrick; }
+}
+
+.nav {
+	float: right;
+	font-size: 16px;
+}
+.nav ul { margin-left: -15%; margin-top: 3.2%; }
+.nav li { float: left; padding: 0.8%; overflow:hidden; }
+.nav a { text-decoration: none; font-size: 20px; color: lightcyan; }
+/* ------------------------------------------------------------------------------------  */
+.nav li:hover {
+	background-color: white;
+	border-top-left-radius: 15px;
+}
+.nav a:hover {
+	text-decoration: underline; color: black; text-shadow: 0.8px 1.5px 0.8px yellow;
+}
+#fset {
+	margin-bottom: 1%; margin-left: 23%; margin-right: 21.5%; margin-top: 50px;
+	font-size: 25px;
+	padding: 1%;
+}
+
+#fset p { float: left; text-align: left; font-size: 15px; }
+#all-content {
+	text-align: center; margin-left: 0%; margin-right: 0%;
+}
+#vege-div {
+	margin-bottom: 23%; display: block;
+}
+#vege-div ul {
+	margin-left: 3.5%;
+	display: block;
+}
+.legume {
+	overflow: hidden;
+	float: left; padding: 1.5%;
+}
+.legume a {
+	text-decoration: none;
+}
+#allinfo {
+	margin-top: 2%;
+	font-size: 25px;
+}
+#allinfo ul {}
+#allinfo .zeig {
+	overflow: hidden;
+}
+#allinfo .zeig a {
+	text-decoration: none;
+}
+hr { position: relative; }
+#select { float: left; font-size: 25px; margin-left: 2%; }
+.ul1-li0 { overflow: hidden; }
+.mselect { width: 100%;  font-size: 20px; }
+#rechtinfo ul {
+	margin-top: 2%;
+	width: 100%;
+	height: 40px;
+	padding-left: 9%;
+	background-color: darkgoldenrod;
+}
+#rechtinfo li {
+	float: left;
+	padding: 1%;
+	font-size: 18px;
+	overflow: hidden;
+}
+#rechtinfo li a {
+	text-decoration: none;
+}
+#rechtinfo li:hover {
+	background-color: white;
+}
+#rechtinfo li:hover a {
+	text-decoration: underline;
+}
+
+#center-info {
+	margin-top: 1%;
+	width: 100%; height: 31px;
+	background-color: black;
+}
+
+.powered {
+	font-size: 20px;
+	color: white;
+}
+.powered a { color: red; }
+/*  #############################################################################################################################  */
+/* And of Screen media Android phone  */
+/*  ###############################################################################################  */
+
+/*  screen media android Orientation landscap */
+@media (orientation: landscape) and (max-width: 815px) {
+
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	body { background-color: cyan; }
+
+    #dv-content {
+    	width: 100%;
+    	height: 80px;
+    }
+
+    .titre {
+    	font-family: "Times New Roman", Times, serif;
+    	font-size: 45px;
+    	margin-top: 1%;
+    	margin-left: 2%;
+    }
+
+    .nav {
+    	display: block;
+    }
+    .nav ul { padding-left: -20%; }
+    .nav li {
+    	margin-top: -4%; 
+        float: left;
+    }
+    .nav li:hover { background-color: transparent; }
+	.nav li a {
+		font-size: 15px;
+	}
+	.nav li a:hover { color: white; }
+
+}
+/* And of Screen media Android phone  orientation Landscape */
+/*  ###############################################################################################  */
+/*  screen media android phone width 414 height 757 Orientation portrait */
+@media (orientation: portrait) and (min-width: 412px) and (max-width: 780px) {
+
+    * {
+    	width: 89.99%;
+    }
+	body { background-color: lightcyan; }
+    
+    #dv-content {
+    	width: 100%;
+    	height: 60px;
+    }
+	.titre {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 45px;
+		margin-top: 1%;
+		margin-left: -8%;
+	}
+    #dv-content .menu {
+    	margin-top: -5%;
+		margin-left: -18%;
+    }
+    .menu:hover {
+    	color: black;
+    	text-shadow: 1px 1.5px 1px yellow;
+    }
+    .nav {
+    	position: absolute;
+    	padding-left: 0px; padding-right: 0px;
+    	left: 0px;
+        height: 92vh; 
+        top: 3vh;
+        display: flex;
+        /* flex-direction: column; */
+        width: 70%;
+        transform: translateX(100%);
+    }
+    .nav li {
+    	padding: 1px;
+    	display: none;
+    }
+	.nav li a {
+		font-size: 15px;
+	}
+    #allinfo ul { margin-left: 5%; }
+    #fset {
+	    display: block;
+        margin-top: 25%; margin-left: 2%;
+	    font-size: 25px; width: 130%;
+    }
+    #fset legend { font-size: 20px; }
+    #fset legend b { font-size: 18px; }
+    #fset p { text-align: left; font-size: 13px; }
+    #vege-div h1 { font-size: 22px; }
+    #all-content {
+    	margin-left: 13.5%;
+    	position: absolute;
+    }
+
+    #allinfo ul {}
+    #allinfo .zeig {}
+    #allinfo .zeig a {
+    	font-size: 18px;
+    }
+
+    hr { margin-left: -4%; }
+    #select { display: block; }
+    #select .ul1-li0 { overflow: hidden; font-size: 18px; margin-left: -3%; }
+    .mselect { margin-left: -13%; }
+ 
+    #rechtinfo .wiederrufInfo {
+    	margin-left: -10%;
+    	padding-bottom: 10%;
+        font-size: 30px;
+        color: red;
+        text-shadow: 1px 1.5px 1px black;
+        text-decoration: none;
+    }
+    #rechtinfo .wiederrufInfo:hover { text-decoration: underline; }
+    #rechtinfo ul { display: none; }
+    #rechtinfo a {
+	    font-size: 15px; 
+    }
+
+    #dv-content::active #all-content {
+    	display: block;
+    }
+
+    #center-info { display: none; }
+}
+
+/*  screen media android phone  */
+@media (orientation: portrait) and (min-width: 360px) and (max-width: 380px) {
+
+	* {
+		margin: 0px;
+		padding: 0px;
+		width: 80%;
+	}
+	body { background-color: red; }
+	.titre {
+		font-family: "Times New Roman", Times, serif;
+		font-size: 28px;
+		margin-left: 0px;
+	}
+}
+/* And of Screen media Android phone  */

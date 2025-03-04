@@ -1,0 +1,321 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>&emsp;&emsp;&emsp;&ensp;ROCKSYSHOP</title>
+
+    <!-- NoScript If browser desactivate JavaScript ? the hide Page and Show Label Text.
+    User have to activate JavaScript to Access to the HomePage -->
+    <noscript id="nos">
+    	<style type="text/css">
+    		#firstContent { display: none; }
+    		#nos { margin-left: 20%; }
+    		.nolab {
+    			display: block;
+    			font-size: 80px; font-family: "Times New Roman", Times, serif; 
+    			font-weight: bold; text-align: center; text-shadow: 1px 1.2px 1px yellow; 
+    			margin-left: 20%; margin-right: 20%; margin-bottom: 5%; margin-top: 8%;
+	        }
+    	</style>
+    	<label class="nolab">Please Activate JAVASCRIPT to have ACCESS! ;-)</label>
+    </noscript>
+    <!-- Call JQuery module in the Sccript for Nice JScode --> 
+	<script src="{% static 'src/lib/query/query.min.js' %}"></script>
+	<link rel="stylesheet" type="text/css" href="{% static 'src/css/homep.css' %}">
+	<script src="{% static 'src/jss/home_mobile.js' %}"></script>
+	<script src="{% static 'src/jss/homep.js' %}"></script>
+</head>
+<body>
+
+	<center id="firstContent">
+		<!-- EN TETE DE LA PAGE -->
+		<!-- ##########################################################################################  -->
+		<div id="dv-content">
+			<!-- ************************************************************************  -->
+			<div class="titre">
+				<label>ROCKSYSHOP</label>
+			</div>
+			<div class="nav">
+				<ul>
+					<div class="menu">
+					   <a href="#"></a>
+					</div>
+					<li><a href="#"> Neue produkts </a></li>
+					<li><a href="#"> Süßigkeiten   </a></li>
+					<li><a href="#"> Zeitungen +   </a></li>
+					<li><a href="#"> Lebensmittel  </a></li>
+					<li><a href="#"> Getränke      </a></li>
+					<li><a href="#"> Diversität    </a></li>
+				</ul>
+			</div>
+			<!--  ************************************************************************* -->
+		</div>
+		<br><br>
+			<fieldset id="fset">
+				<legend>Der Shop für aller Produkte</legend><br>
+				<p>
+					Herzlich willkommen auf der RockSy-Plattform – Ihrem vielseitigen <b>Einkaufsparadies!</b><br><br>
+
+
+                   <strong>ROCKSYSHOP</strong> ist ein stolzes Familienunternehmen und Ihr europaweiter Komplettanbieter für asiatische, afrikanische, arabische und indische Lebensmittel. <br>
+                   Unsere vielfältige Produktpalette richtet sich an ethnische Geschäfte, Großhändler, Food-Service-Unternehmen,<br>
+                   Supermarktketten und E-Commerce-Plattformen. Diese schätzen wir als Partner und betreuen sie individuell mit unserem personalisierten Service.<br>
+                   Unser engagiertes, multikulturelles Vertriebsteam unterstützt unsere Kunden in mehr als fünf Sprachen und sorgt dafür, dass sie stets zufrieden und bestens versorgt sind.<br>
+                   Entdecken Sie die Vielfalt der Welt bei ROCKSYSHOP!<br><br>
+					<a href="#">Français</a>&emsp;<a href="#">English</a>&emsp;<a href="#">Deutsch</a>&emsp;<a href="#">عرب</a>&emsp;<a href="#">Nederlands</a>&emsp;<a href="#">Ouest-Afrikanish</a>
+				</p>
+			</fieldset>
+		<!-- ##########################################################################################  -->
+		<div id="all-content">
+
+		<div id="vege-div">
+			<center><h1> Frisches Lebensmittel Produkt </h1></center>
+			<ul>
+			   <li class="legume">
+			   	  <a href="#"><img class="img1" src="{% static 'src/media/imgs/legumeetplus/banana.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#">Plantin </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img2" src="{% static 'src/media/imgs/legumeetplus/igname.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#">Yamswurzel</a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img3" src="{% static 'src/media/imgs/legumeetplus/piments.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#">Frische Pfeffer</a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img4" src="{% static 'src/media/imgs/legumeetplus/gombo.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#">Frische Okra</a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img5" src="{% static 'src/media/imgs/legumeetplus/taro.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#">Taro-Knolle</a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			</ul>
+		</div><br>
+		<div id="allinfo">
+			<ul>
+				<!-- {% url 'gemuse' %} -->
+			   	<li class="zeig"><a href="">Mehr zeigen</a></li>
+			</ul>
+		</div>
+		<br>
+		<hr>
+		<br>
+		
+<!-- ########################################################################################################## -->
+		<div id="vege-div">
+			<center><h1> Tiefkühlprodukte </h1></center>
+			<ul>
+			   <li class="legume">
+			   	  <a href="#"><img class="img11" src="{% static 'src/media/imgs/congele/crevette.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Garnele </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img22" src="{% static 'src/media/imgs/congele/patte2b.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Rinderkeule </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img33" src="{% static 'src/media/imgs/congele/poissonrouge.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Fisch </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img44" src="{% static 'src/media/imgs/congele/p-thon.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Thunfisch </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img55" src="{% static 'src/media/imgs/congele/tilapia.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Tilapia </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			</ul>
+		</div><br>
+		<div id="allinfo">
+			<ul>
+			   	<li class="zeig"><a href="#">Mehr zeigen</a></li>
+			</ul>
+		</div>
+		<br>
+		<hr>
+		<br>
+		
+<!-- ########################################################################################################## -->
+		<div id="vege-div">
+			<center><h1> Konserven Produkts </h1></center>
+			<ul>
+			   <li class="legume">
+			   	  <a href="#"><img class="img01" src="{% static 'src/media/imgs/conserve/Baobab.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> trocken Baobab </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img02" src="{% static 'src/media/imgs/conserve/Bissap.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Bissap-Blatt </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img03" src="{% static 'src/media/imgs/conserve/boissons.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Getränke </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img04" src="{% static 'src/media/imgs/conserve/chips.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Chips </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img05" src="{% static 'src/media/imgs/conserve/cereal.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Milchpulver </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			</ul>
+		</div><br>
+		<div id="allinfo">
+			<ul>
+			   	<li class="zeig"><a href="#">Mehr zeigen</a></li>
+			</ul>
+		</div>
+		<br>
+		<hr>
+		<br>
+		
+<!-- ########################################################################################################## -->
+		<div id="vege-div">
+			<center><h1> Obst und mehr </h1></center>
+			<ul>
+			   <li class="legume">
+			   	  <a href="#"><img class="img001" src="{% static 'src/media/imgs/fruits/avoca.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Avocado </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img002" src="{% static 'src/media/imgs/fruits/coco.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Kokosnuss </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img003" src="{% static 'src/media/imgs/fruits/mangue.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Mango </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img004" src="{% static 'src/media/imgs/fruits/papaye1.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Papaya </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			   <li class="legume">
+			   	  <a href="#"><img class="img005" src="{% static 'src/media/imgs/fruits/passion.png' %}" height="200px" width="200px"></a>
+			   	  <br>
+			   	  <a href="#"> Passionsfrucht </a>&emsp;
+			   	  <label>[ID]: #3070-1</label><br>
+			   	  <label>100g x 10 <br><b>€ 200 </b></label>
+			   </li>
+			</ul>
+		</div><br>
+		<div id="allinfo">
+			<ul>
+			   	<li class="zeig"><a href="#">Mehr zeigen</a></li>
+			</ul>
+		</div>
+		<br>
+		<hr>
+		<br>
+		
+<!-- ########################################################################################################## -->
+		<div id="select">
+			<li class="ul1-li0">BITTE CATEGORIE AUSWALLEN</li>
+   					<select class="mselect">
+   						<option value="Lebensmittel"><a href="">Lebensmittel</a></option>
+   						<option value="tiefkuhl"><a href="">Tiefkühlprodukte</a></option>
+   						<option value="conserve"><a href="">Konserven</a></option>
+   						<option value="boisson"><a href="">Getränke</a></option>
+   						<option value="fruit"><a href="#">Obst</a></option>
+   						<option value="sucre"><a href="">Süßigkeiten und Snacks</a></option>
+   						<option value="livre"><a href="">Zeitungen & Bucher</a></option>
+   						<option value="enfants"><a href="">Kinder</a></option>
+   						<option value="mehl"><a href="">Getreideprodukt</a></option>
+   						<option value="sauce"><a href="">Soße produkte</a></option>
+   						<option value="cosmetique"><a href="">Kosmetik & Haarprodukte</a></option>
+   						<option value="huile"><a href="">Öl produkte</a></option>
+   						<option value="viande"><a href="">Fleisch</a></option>
+   						<option value="poisson"><a href="">Fische</a></option>
+   						<option value="crustace"><a href="">Schaltier</a></option>
+   						<option value="vegetarien"><a href="">vegetarisches Produkt</a></option>
+   						<option value="legum"><a href="">Gemüse</a></option>
+   						<option value="afrik"><a href="">Afrikanische beste</a></option>
+   						<option value="seche"><a href="">Trockenprodukte</a></option>
+   						<option value="feuille"><a href="#">Blattbasiert</a></option>
+   					</select>
+		</div>
+		<br><br><br>
+		<!-- ##########################################################################################  -->
+		<div id="rechtinfo">
+			<a class="wiederrufInfo" href="#"></a>
+			<ul>
+				<li><a href="#"> Impressum </a></li>
+				<li><a href="#"> Widerrufsbelehrung </a></li>
+				<li><a href="#"> Datenschutzerklärung </a></li>
+				<li><a href="#"> AGB </a></li>
+				<li><a href="#"> Versand </a></li>
+				<li><a href="#"> Allgemeine Geschäftsbedingungen </a></li>
+				<li><a href="#"> Widerrufsrecht </a></li>
+			</ul>
+		</div>
+	</center>
+	<center id="center-info">
+		<label class="powered"> © 2023, <a href="#">RockSyShop - Offiziell</a> &emsp;&emsp;&emsp;&emsp; Powered by <a href="#"><b>SYLLA-FreeLancer</b></a></label><br>
+	</center>
+	<!-- ###########################################################################################  -->
+	
+</body>
+</html>
